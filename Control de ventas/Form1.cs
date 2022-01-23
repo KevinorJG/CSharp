@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using Control_de_ventas.Clases;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,22 @@ namespace Control_de_ventas
         public Form1()
         {
             InitializeComponent();
+            labelConec.Text = "No conectado";
+            puntoBox.Visible = false;
+            Conexion cn = new Conexion();
+            
+            try
+            {
+                cn.Conectar();
+                labelConec.Text = "Conectado";
+                puntoBox.Visible = true;
+
+            }
+            catch(Exception e)
+            {
+
+            }
+            
            
 
         }
@@ -146,6 +163,11 @@ namespace Control_de_ventas
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }

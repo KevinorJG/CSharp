@@ -54,8 +54,11 @@ namespace Control_de_ventas
             this.columnPrecioFinal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnRegistro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnBoleta = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelConec = new System.Windows.Forms.Label();
+            this.puntoBox = new System.Windows.Forms.PictureBox();
             this.checkImg = new System.Windows.Forms.PictureBox();
             this.AreaVenta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.puntoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -287,6 +290,26 @@ namespace Control_de_ventas
             this.columnBoleta.Text = "REFERENCIA";
             this.columnBoleta.Width = 140;
             // 
+            // labelConec
+            // 
+            this.labelConec.AutoSize = true;
+            this.labelConec.Location = new System.Drawing.Point(861, 485);
+            this.labelConec.Name = "labelConec";
+            this.labelConec.Size = new System.Drawing.Size(59, 13);
+            this.labelConec.TabIndex = 10;
+            this.labelConec.Text = "Conectado";
+            // 
+            // puntoBox
+            // 
+            this.puntoBox.Image = global::Control_de_ventas.Properties.Resources.Green;
+            this.puntoBox.Location = new System.Drawing.Point(918, 484);
+            this.puntoBox.Name = "puntoBox";
+            this.puntoBox.Size = new System.Drawing.Size(27, 16);
+            this.puntoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.puntoBox.TabIndex = 11;
+            this.puntoBox.TabStop = false;
+            this.puntoBox.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
             // checkImg
             // 
             this.checkImg.Image = global::Control_de_ventas.Properties.Resources.check;
@@ -302,6 +325,8 @@ namespace Control_de_ventas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 520);
+            this.Controls.Add(this.puntoBox);
+            this.Controls.Add(this.labelConec);
             this.Controls.Add(this.checkImg);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.buttonExit);
@@ -318,6 +343,7 @@ namespace Control_de_ventas
             this.Load += new System.EventHandler(this.Form1_Load);
             this.AreaVenta.ResumeLayout(false);
             this.AreaVenta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.puntoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -352,6 +378,8 @@ namespace Control_de_ventas
         private System.Windows.Forms.ColumnHeader columnRegistro;
         private System.Windows.Forms.ColumnHeader columnBoleta;
         private System.Windows.Forms.PictureBox checkImg;
+        private System.Windows.Forms.Label labelConec;
+        private System.Windows.Forms.PictureBox puntoBox;
     }
 }
 
