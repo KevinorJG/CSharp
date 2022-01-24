@@ -78,6 +78,7 @@ namespace Control_de_ventas
             this.AreaVenta.TabIndex = 0;
             this.AreaVenta.TabStop = false;
             this.AreaVenta.Text = "Area de venta";
+            this.AreaVenta.Enter += new System.EventHandler(this.AreaVenta_Enter);
             // 
             // labelPrice
             // 
@@ -293,7 +294,7 @@ namespace Control_de_ventas
             // labelConec
             // 
             this.labelConec.AutoSize = true;
-            this.labelConec.Location = new System.Drawing.Point(861, 485);
+            this.labelConec.Location = new System.Drawing.Point(838, 485);
             this.labelConec.Name = "labelConec";
             this.labelConec.Size = new System.Drawing.Size(59, 13);
             this.labelConec.TabIndex = 10;

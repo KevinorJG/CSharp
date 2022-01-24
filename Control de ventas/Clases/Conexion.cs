@@ -27,7 +27,7 @@ namespace Control_de_ventas.Clases
             }
             catch(Exception e)
             {
-               
+                MessageBox.Show("No se conectó", "Conexión Fallida", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
            
 

@@ -20,19 +20,21 @@ namespace Control_de_ventas
         {
             InitializeComponent();
             labelConec.Text = "No conectado";
-            puntoBox.Visible = false;
+            puntoBox.Image = global::Control_de_ventas.Properties.Resources.Red;
             Conexion cn = new Conexion();
             
             try
             {
                 cn.Conectar();
                 labelConec.Text = "Conectado";
+                puntoBox.Image = global::Control_de_ventas.Properties.Resources.Green;
                 puntoBox.Visible = true;
 
             }
             catch(Exception e)
             {
-
+                puntoBox.Image = global::Control_de_ventas.Properties.Resources.Yellow;
+                puntoBox.Visible = true;
             }
             
            
@@ -168,6 +170,11 @@ namespace Control_de_ventas
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AreaVenta_Enter(object sender, EventArgs e)
         {
 
         }
