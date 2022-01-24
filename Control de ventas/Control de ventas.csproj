@@ -94,5 +94,8 @@
   <ItemGroup>
     <None Include="Resources\Yellow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase\Tabla Registro.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
